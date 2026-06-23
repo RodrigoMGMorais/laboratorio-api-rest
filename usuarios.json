@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nome": "Rodrigo",
+    "cargo": "Analista de Sistemas"
+  },
+  {
+    "id": 2,
+    "nome": "Maria",
+    "cargo": "Suporte Tecnico"
+  },
+  {
+    "id": 3,
+    "nome": "Laercio",
+    "cargo": "Atendente"
+  },
+  {
+    "id": 4,
+    "nome": "Cecília",
+    "cargo": "Gerente"
+  }
+]
