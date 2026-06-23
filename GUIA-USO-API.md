@@ -31,6 +31,22 @@ http://localhost:5000/api
 
 ---
 
+## 🖥️ Como executar a API localmente
+Você pode rodar o projeto no seu computador sem depender de ambientes externos. Basta seguir esses passos:
+
+### ✅ Pré-requisitos
+- Ter o **Python 3.8 ou superior** instalado
+- Ter o **Git** instalado para clonar o repositório
+
+### 📋 Passo a passo
+1. **Baixar o código do projeto**
+   Abra o terminal e execute:
+   ```bash
+   git clone https://github.com/RodrigoMGMorais/laboratorio-api-rest.git
+   cd laboratorio-api-rest
+
+---
+
 ## 📋 Detalhamento de Cada Operação
 
 ### 1️⃣ GET → Listar todos os usuários
