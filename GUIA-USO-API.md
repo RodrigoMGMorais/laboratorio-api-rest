@@ -45,6 +45,51 @@ Você pode rodar o projeto no seu computador sem depender de ambientes externos.
    git clone https://github.com/RodrigoMGMorais/laboratorio-api-rest.git
    cd laboratorio-api-rest
 
+2. **Instalar as dependências necessárias**
+pip install -r requirements.txt
+
+3. **Iniciar a API**
+Quando iniciada, ela ficará disponível no endereço local:
+http://localhost:5000/api/usuarios
+
+🧪 Exemplos de teste com o comando curl
+Além do Postman, você pode testar todas as operações diretamente pelo terminal:
+🔹 Listar todos os usuários
+curl http://localhost:5000/api/usuarios
+
+🔹 Consultar um usuário por ID
+curl http://localhost:5000/api/usuarios/3
+
+🔹 Adicionar novo usuário (ID gerado automaticamente)
+curl -X POST -H "Content-Type: application/json" -d '{"nome":"Heitor","cargo":"Programador JR"}' http://localhost:5000/api/usuarios
+
+🔹 Adicionar novo usuário definindo o ID
+curl -X POST -H "Content-Type: application/json" -d '{"id":5,"nome":"Ana Silva","cargo":"Desenvolvedora"}' http://localhost:5000/api/usuarios
+
+🔹 Atualizar dados do usuário
+curl -X PUT -H "Content-Type: application/json" -d '{"cargo":"Programador Pleno"}' http://localhost:5000/api/usuarios/3
+
+🔹 Alterar o ID do usuário
+curl -X PUT -H "Content-Type: application/json" -d '{"id":7}' http://localhost:5000/api/usuarios/3
+
+🔹 Excluir usuário
+curl -X DELETE http://localhost:5000/api/usuarios/7
+
+⚠️ Observação sobre acesso externo
+Durante o desenvolvimento, foi usado o ambiente GitHub Codespaces, que forneceu a URL temporária:
+https://upgraded-space-goggles-p75v475gr5539799-5000.app.github.dev/api/usuarios
+
+Essa URL só permanece ativa enquanto o ambiente de desenvolvimento estiver aberto. Para uso contínuo, basta executar a API localmente ou hospedá-la em qualquer serviço compatível com Python/Flask.
+
+---
+
+## 📤 Enviar a atualização para o GitHub
+No terminal do Codespaces, execute esses comandos para salvar e publicar essa alteração:
+```bash
+git add GUIA-USO-API.md
+git commit -m "Adiciona instruções para execução local e comandos curl"
+git push
+
 ---
 
 ## 📋 Detalhamento de Cada Operação
