@@ -219,7 +219,8 @@ O problema é seu. Se um sistema de CS retorna 500 para o cliente, você tem um 
 Autenticação vs. Autorização: Autenticação é "quem você é?" (Bearer Token, JWT). Autorização é "o que você pode fazer?" (Scopes, RBAC).
 
 ## 3. "Macetes" que os Amadores não sabem
-Circuit Breaker (O Padrão de Elite): Se uma API que seu sistema consome está fora do ar, você não pode ficar tentando reconectar infinitamente, pois isso vai consumir todos os seus recursos. O Circuit Breaker "abre o circuito", para as tentativas por um tempo e falha rápido, protegendo seu sistema.
+### Circuit Breaker (O Padrão de Elite): 
+Se uma API que seu sistema consome está fora do ar, você não pode ficar tentando reconectar infinitamente, pois isso vai consumir todos os seus recursos. O Circuit Breaker "abre o circuito", para as tentativas por um tempo e falha rápido, protegendo seu sistema.
 
 ## Versioning (Versionamento): 
 Nunca mude uma API em produção. Se precisar mudar, crie a /v2/. Se você não versiona, você quebra a integração de todo mundo que consome seu serviço.
