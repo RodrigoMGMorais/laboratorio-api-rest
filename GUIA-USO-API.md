@@ -228,8 +228,11 @@ Nunca mude uma API em produção. Se precisar mudar, crie a /v2/. Se você não 
 ## Payload Minimalista: 
 O que você envia e recebe deve ser o mínimo necessário. Dados desnecessários incham a rede e aumentam a latência.
 
-Sempre use o cabeçalho Content-Type: application/json para requisições com corpo (POST e PUT).
-O ID é único: não pode ter dois usuários com o mesmo número.
+# Sempre use o cabeçalho Content-Type: 
+application/json para requisições com corpo (POST e PUT).
+
+## O ID é único: 
+não pode ter dois usuários com o mesmo número.
 Os dados ficam salvos no arquivo usuarios.json — não somem ao reiniciar a API.
 Para testar, use ferramentas como Postman, ReqBin ou o terminal com curl.
 
