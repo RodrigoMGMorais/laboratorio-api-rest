@@ -197,8 +197,8 @@ Esqueça a definição de dicionário.
 ### O segredo da elite: 
 Nunca confie que o contrato será cumprido. O contrato pode mudar, a rede pode falhar e o servidor pode estar sobrecarregado. APIs de elite são construídas com o princípio de "Defense in Depth".
 
-### 2. O Vocabulário de Elite (O que falar na entrevista)
-Se você quer ser contratado como sênior, não diga apenas "eu consumo APIs". Use estes termos:
+### 2. O Vocabulário de Elite:
+Use estes termos a seguir:
 
 ### Idempotência: 
 A capacidade de fazer a mesma requisição múltiplas vezes sem alterar o resultado. Exemplo: Se eu envio um comando de "cobrar pedágio" duas vezes por erro de rede, o sistema deve entender que é a mesma transação (o correlation_id do nosso exemplo anterior é o que garante isso).
