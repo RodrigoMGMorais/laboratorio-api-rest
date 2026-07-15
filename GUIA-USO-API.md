@@ -186,37 +186,45 @@ Código	Significado
 404 Not Found	Usuário com esse ID não existe
 405 Method Not Allowed	Método usado não é permitido para essa rota
 409 Conflict	Tentou usar um ID que já está cadastrado
-
+```
 ---
-## 💡Dicas Importantes
- 1. O "Cerne": O que uma API realmente é?
+## 💡Dicas Importantes ✅
+ 
+ ### 1. O "Cerne": O que uma API realmente é?
 Esqueça a definição de dicionário. Uma API (Application Programming Interface) é um contrato de comunicação.
 
-O segredo da elite: Nunca confie que o contrato será cumprido. O contrato pode mudar, a rede pode falhar e o servidor pode estar sobrecarregado. APIs de elite são construídas com o princípio de "Defense in Depth".
+### O segredo da elite: 
+Nunca confie que o contrato será cumprido. O contrato pode mudar, a rede pode falhar e o servidor pode estar sobrecarregado. APIs de elite são construídas com o princípio de "Defense in Depth".
 
-2. O Vocabulário de Elite (O que falar na entrevista)
+### 2. O Vocabulário de Elite (O que falar na entrevista)
 Se você quer ser contratado como sênior, não diga apenas "eu consumo APIs". Use estes termos:
 
-Idempotência: A capacidade de fazer a mesma requisição múltiplas vezes sem alterar o resultado. Exemplo: Se eu envio um comando de "cobrar pedágio" duas vezes por erro de rede, o sistema deve entender que é a mesma transação (o correlation_id do nosso exemplo anterior é o que garante isso).
+### Idempotência: 
+A capacidade de fazer a mesma requisição múltiplas vezes sem alterar o resultado. Exemplo: Se eu envio um comando de "cobrar pedágio" duas vezes por erro de rede, o sistema deve entender que é a mesma transação (o correlation_id do nosso exemplo anterior é o que garante isso).
 
-Rate Limiting / Throttling: A capacidade de proteger seu sistema limitando o número de requisições que um cliente pode fazer. Se você não domina isso, seu sistema cai por excesso de carga.
+### Rate Limiting / Throttling: 
+A capacidade de proteger seu sistema limitando o número de requisições que um cliente pode fazer. Se você não domina isso, seu sistema cai por excesso de carga.
 
-Códigos de Status HTTP (O "ABC" da comunicação):
+## Códigos de Status HTTP (O "ABC" da comunicação):
 
-2xx (Sucesso): Tudo certo.
+### 2xx (Sucesso): Tudo certo.
 
-4xx (Erro do Cliente): O problema é quem enviou (ex: 400 Bad Request, 401 Unauthorized, 404 Not Found).
+### 4xx (Erro do Cliente): 
+O problema é quem enviou (ex: 400 Bad Request, 401 Unauthorized, 404 Not Found).
 
-5xx (Erro do Servidor): O problema é seu. Se um sistema de CS retorna 500 para o cliente, você tem um problema crítico de estabilidade.
+### 5xx (Erro do Servidor): 
+O problema é seu. Se um sistema de CS retorna 500 para o cliente, você tem um problema crítico de estabilidade.
 
 Autenticação vs. Autorização: Autenticação é "quem você é?" (Bearer Token, JWT). Autorização é "o que você pode fazer?" (Scopes, RBAC).
 
-3. "Macetes" que os Amadores não sabem
+## 3. "Macetes" que os Amadores não sabem
 Circuit Breaker (O Padrão de Elite): Se uma API que seu sistema consome está fora do ar, você não pode ficar tentando reconectar infinitamente, pois isso vai consumir todos os seus recursos. O Circuit Breaker "abre o circuito", para as tentativas por um tempo e falha rápido, protegendo seu sistema.
 
-Versioning (Versionamento): Nunca mude uma API em produção. Se precisar mudar, crie a /v2/. Se você não versiona, você quebra a integração de todo mundo que consome seu serviço.
+## Versioning (Versionamento): 
+Nunca mude uma API em produção. Se precisar mudar, crie a /v2/. Se você não versiona, você quebra a integração de todo mundo que consome seu serviço.
 
-Payload Minimalista: O que você envia e recebe deve ser o mínimo necessário. Dados desnecessários incham a rede e aumentam a latência.
+## Payload Minimalista: 
+O que você envia e recebe deve ser o mínimo necessário. Dados desnecessários incham a rede e aumentam a latência.
 
 Sempre use o cabeçalho Content-Type: application/json para requisições com corpo (POST e PUT).
 O ID é único: não pode ter dois usuários com o mesmo número.
