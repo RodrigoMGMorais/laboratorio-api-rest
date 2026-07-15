@@ -191,7 +191,8 @@ Código	Significado
 ## 💡Dicas Importantes ✅
  
  ### 1. O "Cerne": O que uma API realmente é?
-Esqueça a definição de dicionário. Uma API (Application Programming Interface) é um contrato de comunicação.
+Esqueça a definição de dicionário. 
+# Uma API (Application Programming Interface) é um contrato de comunicação.
 
 ### O segredo da elite: 
 Nunca confie que o contrato será cumprido. O contrato pode mudar, a rede pode falhar e o servidor pode estar sobrecarregado. APIs de elite são construídas com o princípio de "Defense in Depth".
