@@ -52,11 +52,3 @@ Lista dos métodos de autenticação suportados pelo Postman:
 - **Faça backup**: Exporte a Coleção periodicamente no formato `.json` para segurança.
 
 ---
-
-## 5. Publicação no GitHub
-1. Crie repositório com nome descritivo: `laboratorio-api-rest`
-2. Estruture os arquivos:
-   - Salve este conteúdo como `instrucoes.md`
-   - Exporte a Coleção do Postman e adicione o arquivo `.json`
-   - Atualize o `README.md` com apresentação do projeto
-3. Confirme as alterações e envie ao repositório remoto.
