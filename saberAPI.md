@@ -5,7 +5,8 @@
 ---
 
 ## 1. O que é API?
-**API** significa **Interface de Programação de Aplicações** (*Application Programming Interface*).
+**API** significa **Interface de Programação de Aplicações** (*Application Programming Interface*). 
+## É UM CONTRATO DE COMUNICAÇÃO ENTRE 2 SISTEMAS OU APLICAÇÕES DIFERENTES!
 
 > **Definição direta**: É um **conjunto de regras e padrões** que permite que **sistemas diferentes se comuniquem entre si**, 
 trocando dados e funcionalidades de forma padronizada e segura.
