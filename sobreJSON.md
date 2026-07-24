@@ -15,12 +15,12 @@
 ## 2. Regras Fundamentais de Sintaxe
 Essas regras **nunca podem ser quebradas** — se errar alguma, o JSON fica inválido:
 
-✅ **Regra 1**: Usa **chaves `{ }`** para representar um **OBJETO** (um conjunto de informações de uma coisa só).
-✅ **Regra 2**: Usa **colchetes `[ ]`** para representar um **ARRAY/LISTA** (vários itens agrupados).
-✅ **Regra 3**: Os dados são sempre no formato **`"chave": valor`** — a chave sempre entre **aspas duplas**.
-✅ **Regra 4**: Separe os pares com **vírgula**, nunca coloque vírgula no último item.
-✅ **Regra 5**: Valores de texto/string ficam entre **aspas duplas**; números, booleanos e valores nulos **não usam aspas**.
-✅ **Regra 6**: Use **ponto `.`** para decimais, nunca vírgula.
+✅ **Regra 1**: Usa **chaves `{ }`** para representar um **OBJETO** (um conjunto de informações de uma coisa só).<br>
+✅ **Regra 2**: Usa **colchetes `[ ]`** para representar um **ARRAY/LISTA** (vários itens agrupados).<br>
+✅ **Regra 3**: Os dados são sempre no formato **`"chave": valor`** — a chave sempre entre **aspas duplas**.<br>
+✅ **Regra 4**: Separe os pares com **vírgula**, nunca coloque vírgula no último item.<br>
+✅ **Regra 5**: Valores de texto/string ficam entre **aspas duplas**; números, booleanos e valores nulos **não usam aspas**.<br>
+✅ **Regra 6**: Use **ponto `.`** para decimais, nunca vírgula.<br>
 
 ❌ **Erros mais comuns**:
 - Usar aspas simples `' '` em vez de duplas `" "`
