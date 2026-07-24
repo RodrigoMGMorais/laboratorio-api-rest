@@ -77,3 +77,46 @@ Todo fluxo de comunicação segue 3 passos básicos:
 > **Conclusão**: Tudo o que usamos hoje — redes sociais, bancos, lojas, mapas — depende de APIs para funcionar. 
 Entender elas é o primeiro passo para dominar desenvolvimento e testes de qualidade.
 
+---
+### ENSINANDO SOBRE API PARA UM LEIGO!
+
+# 📘 Cenário Prático: Como a API funciona no dia a dia
+**Versão**: 1.0
+**Objetivo**: Explicar o uso de APIs de forma simples, com exemplo real, que qualquer pessoa consiga entender.
+
+---
+
+## 🛒 Cenário: Fazer um pedido de delivery pelo aplicativo
+Vamos usar o exemplo de pedir comida em um app — tudo o que acontece ali usa APIs, e você vai ver **exatamente como funciona, sem termos técnicos complicados**.
+
+---
+
+### 🎯 O que acontece, passo a passo:
+Imagine que você abre o aplicativo do delivery para pedir uma pizza.
+
+| Passo | O que VOCÊ faz | O que a **API** faz por trás | O que acontece depois |
+|---|---|---|---|
+| 1 | Você clica em "Ver restaurantes perto de mim" | O app envia um **pedido** para a API do sistema de pedidos: *"Quero a lista de restaurantes abertos nessa região"* | A API busca essas informações no banco de dados e traz a lista para você ver na tela. |
+| 2 | Você escolhe a pizzaria e seleciona a pizza de calabresa | O app envia um **pedido** para a API: *"Quero adicionar essa pizza ao carrinho"* | A API confere se o item existe, atualiza o seu carrinho e confirma na tela. |
+| 3 | Você escolhe pagar com cartão de crédito | O app envia os dados do pagamento para a **API do serviço de pagamentos** | A API verifica com o banco se o cartão é válido e tem saldo. Se sim, autoriza o pagamento; se não, avisa o motivo. |
+| 4 | Confirma o pedido | O app envia o pedido completo para a API | A API avisa o sistema da pizzaria: *"Chegou um novo pedido: pizza de calabresa, endereço tal, pago com cartão"*. E avisa você: *"Pedido confirmado!"*. |
+
+---
+
+### 🧠 A explicação mais simples de todas:
+- Você não fala diretamente com o banco de dados da pizzaria, nem com o sistema do banco.
+- A **API é o "atendente"** que faz todo o trabalho de levar o seu pedido e trazer a resposta.
+- Sem ela, cada aplicativo teria que saber falar com todos os sistemas diferentes — e isso daria uma confusão enorme.
+
+---
+
+### 📌 Resumo do que é uma API, nesse exemplo:
+> **API = o mensageiro confiável.**
+> Ele sabe exatamente onde entregar o seu pedido, o que pedir e como trazer a resposta de volta para você, sem que você precise saber como tudo funciona por dentro.
+
+---
+
+### ✅ Agora você já sabe:
+- Sempre que um aplicativo se conecta com outro serviço, ele usa uma **API**.
+- Redes sociais, aplicativos de banco, mapas, entregas e jogos — tudo depende dessa "ponte de comunicação" para funcionar.
+- Para testar APIs, nós só verificamos: *"Esse mensageiro está entregando os pedidos corretos, na hora certa e com a resposta certa?"*
