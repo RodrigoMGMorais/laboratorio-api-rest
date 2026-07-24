@@ -91,11 +91,12 @@ Para testar bem, você precisa saber:
 ---
 ## 7. Resumo Rápido para Não Errar
 
-Se for...	Usa...	Exemplo
-1 coisa só	{ }	1 produto, 1 usuário
-Várias coisas	[ { }, { } ]	Lista de produtos, tabela completa
-Texto	"valor"	"Fulano"
-Número / Verdadeiro / Falso	valor	1.5, true, false
+| Se for...               | Usa...         | Exemplo                              |
+|-------------------------|----------------|--------------------------------------|
+| 1 coisa só              | `{ }`          | 1 produto, 1 usuário                 |
+| Várias coisas           | `[ { }, { } ]` | Lista de produtos, tabela completa  |
+| Texto                   | `"valor"`      | `"Fulano"`                           |
+| Número / Verdadeiro / Falso | `valor`    | `1.5`, `true`, `false`               |
 
 **Dica final:** O JSON é simples — basta seguir as regras e praticar. Quanto mais você usar no Postman e no VS Code, mais natural fica!
 
